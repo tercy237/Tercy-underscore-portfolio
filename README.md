@@ -4,7 +4,7 @@
 
   <br/>
 
-  <h1><b>Tercy_portfolio</b></h1>
+  <h1><b>Hello Tercy_portfolio</b></h1>
 
 </div>
 
@@ -125,3 +125,4 @@ I will like to thank microverse and all the students i've collaborated with
 
 This project is [MIT](./MIT.md) licensed.rcy-underscore-portfolio
 in this i will be buildind my portfolio website
+
