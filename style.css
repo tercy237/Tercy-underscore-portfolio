@@ -325,3 +325,23 @@ footer p {
   font-weight: bold;
   border-radius: 3px;
 }
+/*tablet_version styling*/
+@media(min-width:768px) and (max-width:1024px){
+.home h1{
+  font-size: 60px;
+}
+.pro_cards{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.abt_cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cont_form form input{
+  width: 500px;
+}
+.cont_form form textarea{
+  width: 500px;
+}
+}
