@@ -345,3 +345,23 @@ footer p {
   width: 500px;
 }
 }
+/*desktop_version styling*/
+@media(min-width:1025px) {
+.home h2{
+  font-size: 80px;
+}
+.pro_cards{
+   display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+  .abt_cards{
+     display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  }
+  .cont_form form input{
+    width: 800px;
+  } 
+  .cont_form form textarea{
+    width: 800px;
+  }
+}
