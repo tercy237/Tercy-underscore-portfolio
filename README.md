@@ -27,7 +27,7 @@
 - [:pray: Acknowledgements](#acknowledgements)
 - [:memo: License](#license)
 
-# :book: Hello Microverse <a name="about-project"></a>
+# :book:My portfolio<a name="about-project"></a>
 
 This is the first technical Microverse project it tests more on Git, GitHub, GitHub Workflow and Linters.
 
