@@ -66,7 +66,7 @@ footer p {
   background: url(./assets/images/background.png);
   background-position: center;
   background-size: cover;
-  padding: 150px 10px 50px 10px;
+  padding: 150px 10px 50px;
 }
 
 .home h1 {
@@ -256,7 +256,7 @@ footer p {
 
 .cont_form form textarea {
   width: 290px;
-  padding: 10px 10px 90px 10px;
+  padding: 10px 10px 90px;
   border-radius: 8px;
   border: 1px solid #36b37e;
 }
@@ -325,105 +325,132 @@ footer p {
   font-weight: bold;
   border-radius: 3px;
 }
-/*tablet_version styling*/
-@media(min-width:768px) and (max-width:1024px){
-.home h1{
-  font-size: 60px;
+
+/* tablet_version styling */
+@media (768px <= width <= 1024px) {
+  .home h1 {
+    font-size: 60px;
+  }
+
+  .pro_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .abt_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cont_form form input {
+    width: 500px;
+  }
+
+  .cont_form form textarea {
+    width: 500px;
+  }
 }
-.pro_cards{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-}
-.abt_cards{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.cont_form form input{
-  width: 500px;
-}
-.cont_form form textarea{
-  width: 500px;
-}
-}
-/*desktop_version styling*/
-@media(min-width:1025px) {
-  header{
+
+/* desktop_version styling (lower-specificity selectors first to satisfy no-descending-specificity) */
+@media (width >= 1025px) {
+  footer ul {
+    gap: 25px;
+  }
+
+  footer p {
+    padding: 4px 65px;
+    margin-top: 50px;
+  }
+
+  .mail a {
+    font-size: 25px;
+  }
+
+  header {
     justify-content: left;
   }
- .mobile_menu{
-  display: none;
- } 
- .desktop_menu{
-  display: block;
-width: 750px;
- }
- .desktop_menu ul{
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  align-items: center;
-  justify-content: end;
- }
- .desktop_menu ul li a{
-  text-decoration: none;
-  font-size: 25px;
- }
- .desktop_menu ul li a:hover{
-  text-decoration: underline;
-  color: #36b37e;
- }
- .home{
-  background: url(./assets/images/desktop-home-back.jpg);
-  background-position: center;
-  background-size: cover;
-  padding: 250px 0;
- }
-.home h1{
-  font-size: 70px;
-}
-.home p{
-  font-size: 25px;
-  font-weight: 500;
-  line-height: 30px;
-  padding: 20px;
-}
-.home ul{
-  gap: 30px;
-}
-.pro_cards{
-   display: grid;
-  grid-template-columns: repeat(3,1fr);
-}
-  .abt_cards{
-     display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
+  .mobile_menu {
+    display: none;
   }
-  .cont_form form input{
-    width: 800px;
-  } 
-  .cont_form form textarea{
+
+  .desktop_menu {
+    display: block;
+    width: 750px;
+  }
+
+  .desktop_menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .desktop_menu ul li a {
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+  .desktop_menu ul li a:hover {
+    text-decoration: underline;
+    color: #36b37e;
+  }
+
+  .home {
+    background: url(./assets/images/desktop-home-back.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 250px 0;
+  }
+
+  .home h1 {
+    font-size: 70px;
+  }
+
+  .home p {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 20px;
+  }
+
+  .home ul {
+    gap: 30px;
+  }
+
+  .pro_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .abt_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cont_form form input {
     width: 800px;
   }
-.abt_text button {
+
+  .cont_form form textarea {
+    width: 800px;
+  }
+
+  .abt_text button {
     font-size: 40px;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-.cont_form form button {
-  font-size: 40px;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-.mail a{
-  font-size: 25px;
-}
-footer ul{
-gap: 25px;
-}
-footer p{  padding: 4px 65px;
-  margin-top: 50px;}
-  .abt_text h2{
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .cont_form form button {
+    font-size: 40px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .abt_text h2 {
     font-size: 50%;
-  font-weight: 700;
+    font-weight: 700;
   }
 }
