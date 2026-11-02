@@ -276,6 +276,52 @@ footer p {
   font-size: 22px;
 }
 
+/* MOBILE DROPDOWN MENU (placed after the plain p / ul / a rules so specificity only ascends) */
+.mobile_menu.active p:nth-child(1) {
+  rotate: 45deg;
+  position: relative;
+  top: 7px;
+  border-radius: 1px;
+  background-color: #93a79d;
+}
+
+.mobile_menu.active p:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile_menu.active p:nth-child(3) {
+  rotate: -45deg;
+  position: relative;
+  top: -11px;
+  border-radius: 1px;
+  background-color: #93a79d;
+}
+
+.desktop_menu.active {
+  display: block;
+  left: 0;
+}
+
+.desktop_menu.active ul {
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  position: absolute;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 0 30px;
+  list-style: none;
+  gap: 15px;
+}
+
+.desktop_menu.active ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+}
+
 /* PROJECT CARD CONTENT (higher-specificity selectors kept last to satisfy no-descending-specificity) */
 .pro_card span:nth-child(1) {
   height: 252px;
